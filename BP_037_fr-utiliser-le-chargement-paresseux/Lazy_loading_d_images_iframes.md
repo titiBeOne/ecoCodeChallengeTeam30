@@ -47,3 +47,5 @@ Points de contrôle
 - [Lazy loading images](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes)
 - https://web.dev/browser-level-image-lazy-loading/
 - [Lazy loading sur les vidéos](https://web.dev/lazy-loading-video/)
+
+
