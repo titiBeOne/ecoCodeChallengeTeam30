@@ -34,3 +34,8 @@ Points de contrôle
 - [Lazy loading images](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes)
 - https://web.dev/browser-level-image-lazy-loading/
 - [Lazy loading sur les vidéos](https://web.dev/lazy-loading-video/)
+
+## test image
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/800px-Tour_Eiffel_Wikimedia_Commons.jpg" alt="..." />
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Statue_of_Liberty_-_4621961395.jpg/800px-Statue_of_Liberty_-_4621961395.jpg" alt="..." loading="lazy" />
