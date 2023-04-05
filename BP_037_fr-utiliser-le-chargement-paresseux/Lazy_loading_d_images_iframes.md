@@ -9,8 +9,7 @@ https://stackoverflow.com/a/67552400
 
 [Exemple de fonctionnement avec les images](https://mathiasbynens.be/demo/img-loading-lazy)
 
-[Exemple de fonctionnement avec les iframes]
-(https://lazy-load.netlify.app/iframes)
+[Exemple de fonctionnement avec les iframes](https://lazy-load.netlify.app/iframes)
 
 ## Gains
 
