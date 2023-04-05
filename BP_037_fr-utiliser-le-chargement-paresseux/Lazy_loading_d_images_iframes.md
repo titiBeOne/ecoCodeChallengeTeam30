@@ -1,30 +1,30 @@
-# Lazy Loading d'images/iframes (BP037)
+# Images/iframes Lazy Loading (BP037)
 
-## Règle
+## Rule
 
-:recycle: Les navigateurs modernes permettent de charger des images seulement lorsque l'utilisateur est sur le point de les voir, par exemple : quand l'image est en bas de page et nécessite un scroll pour être affichée.
-Si vous souhaitez que cette fonctionnalité soit disponible sur des anciens navigateurs (ie), un `polyfill` sera nécessaire pour son bon fonctionnement.
-Il faut aussi spécifier width et height pour que ça fonctionne :
+:recycle: Modern browsers allow to load images when the user is just about to see them, for example when the image is at the bottom of the page and needs to scroll down to be displayed.
+If you want to make this feature available on older browsers (i.e. IE), a `polyfill` will be needed.
+You will also need to specify the width and height attributes:
 https://stackoverflow.com/a/67552400
 
-[Exemple de fonctionnement avec les images](https://mathiasbynens.be/demo/img-loading-lazy)
+[Working example with images](https://mathiasbynens.be/demo/img-loading-lazy)
 
-[Exemple de fonctionnement avec les iframes](https://lazy-load.netlify.app/iframes)
+[Working example with iframes](https://lazy-load.netlify.app/iframes)
 
-## Gains
+## Benefits
 
-Optimisation de la taille des ressources statiques.
+Optimization of the size of static resources.
 
-## Valider la mise en place de la bonne pratique
+## How to validate the implementation of the best practice
 
-:x: Code à éviter
+:x: Code to avoid
 
 ```html
 <img src="image.jpg" alt="..." />
 <iframe src="video-player.html" title="..."></iframe>
 ```
 
-:heavy_check_mark: Code à favoriser
+:heavy_check_mark: Recommended code
 
 ```html
 <img src="image.jpg" alt="..." loading="lazy" width="200" height="200" />
@@ -37,14 +37,12 @@ Optimisation de la taille des ressources statiques.
 ></iframe>
 ```
 
-Points de contrôle
+Checklist
 
-- [ ] Vérifiez l'utilisation de l'attribute `loading="lazy"` sur les balises `img` avec une taille spécifique
+- [ ] On the `img` tag, check usage of the following attributes : `loading="lazy"`, `width`, `height`.
 
-## Liens
+## Links
 
 - [Lazy loading images](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes)
 - https://web.dev/browser-level-image-lazy-loading/
-- [Lazy loading sur les vidéos](https://web.dev/lazy-loading-video/)
-
-
+- [Lazy loading for videos](https://web.dev/lazy-loading-video/)
