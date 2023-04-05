@@ -4,6 +4,13 @@
 
 :recycle: Les navigateurs modernes permettent de charger des images seulement lorsque l'utilisateur est sur le point de les voir, par exemple : quand l'image est en bas de page et nécessite un scroll pour être affichée.
 Si vous souhaitez que cette fonctionnalité soit disponible sur des anciens navigateurs (ie), un `polyfill` sera nécessaire pour son bon fonctionnement.
+Il faut aussi spécifier width et height pour que ça fonctionne :
+https://stackoverflow.com/a/67552400
+
+[Exemple de fonctionnement avec les images](https://mathiasbynens.be/demo/img-loading-lazy)
+
+[Exemple de fonctionnement avec les iframes]
+(https://lazy-load.netlify.app/iframes)
 
 ## Gains
 
@@ -21,13 +28,19 @@ Optimisation de la taille des ressources statiques.
 :heavy_check_mark: Code à favoriser
 
 ```html
-<img src="image.jpg" alt="..." loading="lazy" />
-<iframe src="video-player.html" title="..." loading="lazy"></iframe>
+<img src="image.jpg" alt="..." loading="lazy" width="200" height="200" />
+<iframe
+  src="video-player.html"
+  title="..."
+  loading="lazy"
+  width="200"
+  height="200"
+></iframe>
 ```
 
 Points de contrôle
 
-- [ ] Vérifiez l'utilisation de l'attribute `loading="lazy"` sur les balises `img`
+- [ ] Vérifiez l'utilisation de l'attribute `loading="lazy"` sur les balises `img` avec une taille spécifique
 
 ## Liens
 
