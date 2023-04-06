@@ -6,41 +6,25 @@ _class: invert
 
 # 30g eq CO2
 
-the Environment and Energy Management Agency (Ademe) in its database estimates the emissions per kWh at 30 g for solar photovoltaicue
+the Environment and Energy Management Agency (Ademe) in its database estimates the emissions per kWh at 30 g for solar photovoltaic
+
+For your information the energie which emit the fewer co2 is the nuclear and the bigger is the coal.
 
 ---
 
 # :recycle: Rule
 
-Replacing momentjs with datefns
+Nos regles concernent le front (js), l'objectif est de lutter contre l'obésitiel, 3 ont pour sujet l'obsolescence de librairies avec pour objectif de réduire la taille des librairies utilisées et de ne pas utiliser de librairies non maintenues :
 
-## :heavy_check_mark: Benefits
+Comment se passer de lodash underscore : https://github.com/green-code-initiative/ecoCode-challenge/issues/35
+Comment se passer de moment : https://github.com/green-code-initiative/ecoCode-challenge/issues/37
+Au sens large comment identifier les packages qui ont des failles de sécurité :
+https://github.com/green-code-initiative/ecoCode-challenge/issues/52
 
-Reducing the size of static resources downloded by around 200kB for each user visiting the website
+3 regles supplémentaires :
+toujours pour la réduction du package :
 
----
-
-## Javascript
-
-:x: Code to avoid
-
-```js
-import moment from 'moment';
-const age = moment().diff(birthday, 'years');
-```
-
-:heavy_check_mark: Recommended code
-
-```js
-import differenceInYears from 'date-fns/differenceInYears';
-const age = differenceInYears(new Date(), birthday);
-```
-
----
-
-## Implementation principle
-
-- [ ] Check that the dependency is no longer in the package.json
-- [ ] Check that there is no more import of MomentJs in the js files
-- [ ] Check that it is no longer in the generated bundle
-- [ ] Check that you are using, at a minimum, the [version 2.0 du toolkit Axa](https://github.com/AxaGuilDEv/react-toolkit/blob/master/MIGRATION.md#date-input)
+- optimize browserlist tag in package.json : https://github.com/green-code-initiative/ecoCode-challenge/issues/54
+- utiliser l'élement picture plutot qu'img pour utiliser les nouveaux formats de compression :
+  https://github.com/green-code-initiative/ecoCode-challenge/issues/53
+- utiliser le lazy loading pour ne pas charger les images / iframes qui ne sont pas affichés : https://github.com/green-code-initiative/ecoCode-challenge/issues/34
